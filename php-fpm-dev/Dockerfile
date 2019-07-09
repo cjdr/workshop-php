@@ -1,4 +1,4 @@
-FROM cjdresco/workshop-php
+FROM cjdresco/workshop-php:7.2-dev
 RUN pecl install xdebug && docker-php-ext-enable xdebug
 RUN apt-get update \    
 	&& apt-get -y install unzip zlib1g-dev \    
