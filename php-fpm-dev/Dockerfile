@@ -1,4 +1,4 @@
-FROM php-fpm-base
+FROM cjdresco/workshop-php
 RUN pecl install xdebug && docker-php-ext-enable xdebug
 RUN apt-get update \    
 	&& apt-get -y install unzip zlib1g-dev \    
